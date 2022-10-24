@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #444242;
+}
+
+
+/*_________Header___________*/
+
+.nav-header-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.img-nav-arrow{
+    width: 10px;
+    height: 10px;
+}
+
+.idioma{
+    margin: 0px 0px 0px 2%;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    padding: 5px 10px 5px 15px;
+    color: #494747;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.img-brasil{
+    width: 25px;
+    height: 25px;
+    margin: 0px 4px 0px 4px;
+}
+
+.menu{
+    color: #ffffff;
+    margin: 0px 0px 0px 85%;
+    width: 30px;
+    height: 30px;
+}
+
+                 /*_________main___________*/
+.container{ 
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: auto;
+}
+
+.imgLogo{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.div-container-botons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.boton{
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+    color: #ffffff;
+    border-radius: 50px;
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container-boton{
+    padding: 0px 8px 0px 0px;
+    width: 32px;
+    height: 22px;
+}
+
+.img-logo-contato{
+    width: 80px;
+    height: 80px;
+}
+
+.pesquisar{
+    background-color: #fa9401;
+    border-color: #fa9401;
+}
+
+.lancamentos{
+    background-color: #444242;
+    border-color: #fa9401;
+}
+
+.carrinho{
+    background-color: #444242;
+    border-color: #fa9401;
+}
+
+.contacto{
+    background-color: #444242;
+    border-color: #fa9401;
+}
+
+
+/*________________________________FOOTER________________________________*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+a{
+    list-style-type: none;
+    margin: 5px;
+
+}
+
+a:link {text-decoration: none }
+a:visited {color: #ffffff;  font-family: arial; text-decoration: none }
+a:hover { color: #ffffff; font-family: arial; text-decoration: none }
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.logo-footer{
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 50px;
+    background-color: #ffff;
+    
+}
+
+
+
+
+
+                                               /*__________________MEDIA QUERIES__________________*/
+
+
+/*________ MEDIA QUERIES IPHONE 5S_____*/
+@media screen and (max-width: 320px) and (max-height: 640px){
+    body{
+        background-color: #FFB64E;
+    }
+    .nav-header-items{
+        margin: 15px 20px 0px 10px;
+    }
+    
+    .menu{
+        margin: 0px 0px 0px 50%;
+    }
+    
+    .container{ 
+        width: 75%;
+    }
+
+    .pesquisar{
+        background-color: #fa9401;
+        border-color: #444242;
+    }
+    
+    .lancamentos{
+        background-color: #444242;
+        border-color: #ffffff;
+    }
+    
+    .carrinho{
+        background-color: #444242;
+        border-color: #ffffff;
+    }
+    
+    .contacto{
+        background-color: #444242;
+        border-color: #ffffff;
+    }
+
+    .footer{
+        margin-top: 50px;
+    }
+}
+
+/* MEDIA SCREEN PHONES */
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+    .nav-header-items{
+        margin: 15px 20px 0px 10px;
+    }
+    
+    .menu{
+        margin: 0px 0px 0px 55%;
+    }
+    
+    .container{ 
+        width: 60%;
+    }
+    
+    .imgLogo{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    
+    .logo-container-boton{
+        padding: 0px 8px 0px 0px;
+        width: 32px;
+        height: 22px;
+    }
+    
+    .img-logo-contato{
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer{
+        margin-top: 50px;
+    }
+}
+
+/* MEDIA SCREEN PHONE HORIZONTAL */
+
+@media screen and (max-width: 640px) and (max-height: 360px) and (orientation: landscape) {
+    .nav-header-items{
+        margin: 15px 20px 0px 10px;
+    }
+    
+    .menu{
+        margin: 0px 0px 0px 75%;
+    }
+    
+    .container{ 
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .div-container-botons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    
+    .imgLogo{
+        margin: auto;
+        padding: 0px 0px 20px 0px;
+        width: 200px;
+        height: 85px;
+
+    }
+    .boton{
+        width: 200px;
+        margin: 10px 15px 10px 15px;
+    }
+    
+    .logo-container-boton{
+        padding: 0px 8px 0px 0px;
+        width: 32px;
+        height: 22px;
+    }
+    
+    .img-logo-contato{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer{
+        display: none;
+    }   
+}
+
+/* MEDIA SCREEN TABLETS */
+
+@media screen and (min-width: 500px) and (max-width: 768px){
+    .nav-header-items{
+        margin: 15px 20px 0px 10px;
+    }
+    
+    .menu{
+        margin: 0px 0px 0px 75%;
+    }
+    
+                     /*_________main___________*/
+    .container{ 
+        width: 310px;
+    }
+    
+    .imgLogo{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    
+    .logo-container-boton{
+        padding: 0px 8px 0px 0px;
+        width: 32px;
+        height: 22px;
+    }
+    
+    .img-logo-contato{
+        width: 80px;
+        height: 80px;
+    }   
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    .nav-header-items{
+        margin: 15px 20px 0px 10px;
+    }
+    
+    .menu{
+        margin: 0px 0px 0px 75%;
+    }
+    
+                     /*_________main___________*/
+    .container{ 
+        width: 310px;
+    }
+    
+    .imgLogo{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    
+    .logo-container-boton{
+        padding: 0px 8px 0px 0px;
+        width: 32px;
+        height: 22px;
+    }
+    
+    .img-logo-contato{
+        width: 80px;
+        height: 80px;
+    }   
+}
+
+
+
